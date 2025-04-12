@@ -1,8 +1,9 @@
 //
 //  TerminalService.swift
-//  backdoor
+//  Termux Web Client
 //
-//  Copyright © 2025 Backdoor LLC. All rights reserved.
+//  This is an updated Swift client for connecting to the Termux Web backend.
+//  It handles terminal sessions via WebSocket and RESTful API as fallback.
 //
 
 import Foundation
@@ -23,7 +24,7 @@ class TerminalService {
     static let shared = TerminalService()
     
     // Set your render.com URL here
-    private let baseURL = "https://your-termux-web-api.onrender.com"
+    private let baseURL = "https://termux-web-terminal.onrender.com"
     private var sessionId: String?
     private let logger = Debug.shared
     
